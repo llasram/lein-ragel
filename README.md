@@ -21,7 +21,7 @@ For optimal usefulness, you will probably want to include `:ragel-compile-path`
   :plugins [[lein-ragel "0.1.0"]]
   :java-source-paths ["target/ragel"]
   :ragel-source-paths ["src/ragel"]
-  :prep-tasks [ragel javac]
+  :prep-tasks ["ragel" "javac"]
   ...)
 ```
 
@@ -30,6 +30,6 @@ options to pass to Ragel with `:ragel-options`.
 
 ## License
 
-Copyright © 2012 Marshall T. Vandegrift
+Copyright © 2012 Marshall Bockrath-Vandegrift
 
 Distributed under the Eclipse Public License, the same as Clojure.
